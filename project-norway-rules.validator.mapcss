@@ -1,0 +1,59 @@
+meta {
+  title: "openstreetmap project norway JOSM validator rules";
+  version: "0.1";
+  description: "Rules to give warning, errors and automatic fixes when importing data into openstreetmap";
+  author: "FredrikLindseth";
+  watch-modified: true;
+  baselanguage: "en_GB";
+  link: "https://github.com/osmno";
+}
+
+/* Address-related tags */
+
+*[ADDRESS] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  /* fixremove: "{0}"; */
+}
+
+*[COUNTY] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+}
+
+*[MUNICIPALITY] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+}
+
+/* Kartverket Smilefjes */
+
+*[CREATED] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+}
+
+*[FIRST_INSPECTION] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+}
+
+*[LAST_INSPECTION] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+}
+
+/* Geocode2osm indicator-tag*/
+
+*[GEOCODE] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+}
+
+/*  TODO:
+
+- Last_inspection not in the last two years
+- Other import-tags
+- Tags from N50
+- fixremove-suggestions on all validations for easy removal of the tags
+*/
