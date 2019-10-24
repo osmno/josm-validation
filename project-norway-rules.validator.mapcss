@@ -13,17 +13,19 @@ meta {
 *[ADDRESS] {
   throwerror: tr("{0} should not be uploaded", "{0.key}");
   group: tr("no-import tag");
-  /* fixremove: "{0}"; */
+  fixRemove: "{0}";
 }
 
 *[COUNTY] {
   throwerror: tr("{0} should not be uploaded", "{0.key}");
   group: tr("no-import tag");
+  fixRemove: "{0}";
 }
 
 *[MUNICIPALITY] {
   throwerror: tr("{0} should not be uploaded", "{0.key}");
   group: tr("no-import tag");
+  fixRemove: "{0}";
 }
 
 /* Kartverket Smilefjes */
@@ -31,16 +33,19 @@ meta {
 *[CREATED] {
   throwerror: tr("{0} should not be uploaded", "{0.key}");
   group: tr("no-import tag");
+  fixRemove: "{0}";
 }
 
 *[FIRST_INSPECTION] {
   throwerror: tr("{0} should not be uploaded", "{0.key}");
   group: tr("no-import tag");
+  fixRemove: "{0}";
 }
 
 *[LAST_INSPECTION] {
   throwerror: tr("{0} should not be uploaded", "{0.key}");
   group: tr("no-import tag");
+  fixRemove: "{0}";
 }
 
 /* Geocode2osm indicator-tag*/
@@ -48,6 +53,7 @@ meta {
 *[GEOCODE] {
   throwerror: tr("{0} should not be uploaded", "{0.key}");
   group: tr("no-import tag");
+  fixRemove: "{0}";
 }
 
 /*  TODO:
@@ -55,5 +61,4 @@ meta {
 - Last_inspection not in the last two years
 - Other import-tags
 - Tags from N50
-- fixremove-suggestions on all validations for easy removal of the tags
 */
