@@ -76,6 +76,36 @@ meta {
   fixRemove: "{0}";
 }
 
+*[ELVEG] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[OSMID] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[SWAP] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[DISTANCE] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[ELVEG] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
 /*  TODO:
 
 - Last_inspection not in the last two years
