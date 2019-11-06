@@ -57,6 +57,12 @@ meta {
   fixRemove: "{0}";
 }
 
+*[FIXME|fixme] {
+  throwwarning: tr("{0} should probably be fixed before upload", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
 *[FIXMISSING] {
   throwerror: tr("{0} should not be uploaded", "{0.key}");
   group: tr("no-import tag");
@@ -70,6 +76,18 @@ meta {
 }
 
 *[GEOCODE] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[GEOCODE_METHOD] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[GEOCODE_RESULT] {
   throwerror: tr("{0} should not be uploaded", "{0.key}");
   group: tr("no-import tag");
   fixRemove: "{0}";
@@ -98,3 +116,4 @@ meta {
   group: tr("no-import tag");
   fixRemove: "{0}";
 }
+
