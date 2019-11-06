@@ -8,7 +8,12 @@ meta {
   link: "https://github.com/osmno";
 }
 
-/* Address-related tags */
+/*  TODO:
+
+- Last_inspection not in the last two years
+- Other import-tags
+- Tags from N50
+*/
 
 *[ADDRESS] {
   throwerror: tr("{0} should not be uploaded", "{0.key}");
@@ -22,73 +27,7 @@ meta {
   fixRemove: "{0}";
 }
 
-*[MUNICIPALITY] {
-  throwerror: tr("{0} should not be uploaded", "{0.key}");
-  group: tr("no-import tag");
-  fixRemove: "{0}";
-}
-
-/* Kartverket Smilefjes */
-
 *[CREATED] {
-  throwerror: tr("{0} should not be uploaded", "{0.key}");
-  group: tr("no-import tag");
-  fixRemove: "{0}";
-}
-
-*[FIRST_INSPECTION] {
-  throwerror: tr("{0} should not be uploaded", "{0.key}");
-  group: tr("no-import tag");
-  fixRemove: "{0}";
-}
-
-*[LAST_INSPECTION] {
-  throwerror: tr("{0} should not be uploaded", "{0.key}");
-  group: tr("no-import tag");
-  fixRemove: "{0}";
-}
-
-/* Geocode2osm indicator-tag*/
-
-*[GEOCODE] {
-  throwerror: tr("{0} should not be uploaded", "{0.key}");
-  group: tr("no-import tag");
-  fixRemove: "{0}";
-}
-
-/* new_ref-tags */
-
-*[FIXCLASS] {
-  throwerror: tr("{0} should not be uploaded", "{0.key}");
-  group: tr("no-import tag");
-  fixRemove: "{0}";
-}
-
-*[FIXREF] {
-  throwerror: tr("{0} should not be uploaded", "{0.key}");
-  group: tr("no-import tag");
-  fixRemove: "{0}";
-}
-
-*[FIXMISSING] {
-  throwerror: tr("{0} should not be uploaded", "{0.key}");
-  group: tr("no-import tag");
-  fixRemove: "{0}";
-}
-
-*[ELVEG] {
-  throwerror: tr("{0} should not be uploaded", "{0.key}");
-  group: tr("no-import tag");
-  fixRemove: "{0}";
-}
-
-*[OSMID] {
-  throwerror: tr("{0} should not be uploaded", "{0.key}");
-  group: tr("no-import tag");
-  fixRemove: "{0}";
-}
-
-*[SWAP] {
   throwerror: tr("{0} should not be uploaded", "{0.key}");
   group: tr("no-import tag");
   fixRemove: "{0}";
@@ -106,9 +45,56 @@ meta {
   fixRemove: "{0}";
 }
 
-/*  TODO:
+*[FIRST_INSPECTION] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
 
-- Last_inspection not in the last two years
-- Other import-tags
-- Tags from N50
-*/
+*[FIXCLASS] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[FIXMISSING] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[FIXREF] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[GEOCODE] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[LAST_INSPECTION] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[MUNICIPALITY] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[OSMID] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
+
+*[SWAP] {
+  throwerror: tr("{0} should not be uploaded", "{0.key}");
+  group: tr("no-import tag");
+  fixRemove: "{0}";
+}
